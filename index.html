@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Musa Tech Solutions - Leading technology solutions for your business">
-    <meta name="keywords" content="technology, solutions, services, innovation, tech business">
-    <meta name="author" content="Musa Tech Solutions">
-    <title>Musa Tech Solutions | Your Digital Innovation Partner</title>
+    <meta name="description" content="Nexlify — Digital products and technology solutions that propel your business forward.">
+    <meta name="keywords" content="software development, AI automation, cloud architecture, mobile apps, analytics, cybersecurity, tech solutions">
+    <meta name="author" content="Nexlify">
+    <meta property="og:title" content="Nexlify | Amplify What's Next">
+    <meta property="og:description" content="We build digital products that propel businesses forward.">
+    <meta property="og:type" content="website">
+    <title>Nexlify | Amplify What's Next</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Navigation Header -->
-    <header class="header">
+
+    <!-- Navigation -->
+    <header class="header" id="header">
         <nav class="navbar">
             <div class="container">
                 <div class="nav-wrapper">
-                    <div class="logo">
-                        <h1>Musa Tech</h1>
-                    </div>
-                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <a href="#home" class="logo">
+                        <span class="logo-icon">N</span>
+                        <span class="logo-text">nexlify</span>
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -27,161 +32,215 @@
                         <li><a href="#home" class="nav-link">Home</a></li>
                         <li><a href="#about" class="nav-link">About</a></li>
                         <li><a href="#services" class="nav-link">Services</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#contact" class="nav-link nav-cta">Get Started</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Home Section / Hero -->
+    <!-- Hero -->
     <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-orb orb-1"></div>
+            <div class="hero-orb orb-2"></div>
+            <div class="hero-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
         <div class="hero-content">
-            <h2>Welcome to Musa Tech Solutions</h2>
-            <p>Transforming your business through innovative technology</p>
-            <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'});">
-                Explore Our Services
-            </button>
+            <div class="hero-badge">✦ Next-Generation Technology Partner</div>
+            <h1>Amplify<br><span class="gradient-text">What's Next.</span></h1>
+            <p>We build the digital products, intelligent systems, and scalable infrastructure that propel ambitious businesses forward — fast.</p>
+            <div class="hero-actions">
+                <button class="btn btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">See What We Build</button>
+                <button class="btn btn-ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start a Project</button>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item"><h3>500+</h3><p>Projects Shipped</p></div>
+                <div class="stat-divider"></div>
+                <div class="stat-item"><h3>98%</h3><p>Client Retention</p></div>
+                <div class="stat-divider"></div>
+                <div class="stat-item"><h3>40+</h3><p>Countries Reached</p></div>
+                <div class="stat-divider"></div>
+                <div class="stat-item"><h3>12+</h3><p>Years of Expertise</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
     <section id="about" class="about">
         <div class="container">
-            <h2>About Us</h2>
-            <div class="about-content">
+            <div class="about-layout">
                 <div class="about-text">
-                    <p>
-                        Musa Tech Solutions is a leading technology company dedicated to delivering cutting-edge digital solutions for businesses of all sizes. With over a decade of experience, we help enterprises transform their operations and achieve their strategic goals through innovative technology.
-                    </p>
-                    <p>
-                        Our team of skilled professionals is committed to providing exceptional service and sustainable growth to our clients. We believe in building long-term partnerships based on trust, transparency, and results.
-                    </p>
+                    <div class="section-label">Who We Are</div>
+                    <h2 class="left-aligned">Built for builders.<br>Designed for scale.</h2>
+                    <p>Nexlify is a technology company for businesses that refuse to stand still. We partner with founders, enterprises, and ambitious teams to design, engineer, and launch digital solutions that actually move the needle.</p>
+                    <p>From concept to production — we bring the strategy, engineering depth, and relentless focus on outcomes that your next chapter demands.</p>
+                    <ul class="about-values">
+                        <li><span class="check-icon">✓</span><span>Speed without shortcuts — quality at every layer</span></li>
+                        <li><span class="check-icon">✓</span><span>Transparent partnerships built on real results</span></li>
+                        <li><span class="check-icon">✓</span><span>Teams that stay accountable long after launch</span></li>
+                    </ul>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-box">
-                        <h3>500+</h3>
-                        <p>Clients Served</p>
+                <div class="about-visual">
+                    <div class="visual-card vc-1">
+                        <div class="vc-icon">⚡</div>
+                        <h4>Fast Delivery</h4>
+                        <p>MVPs in weeks, not months</p>
                     </div>
-                    <div class="stat-box">
-                        <h3>150+</h3>
-                        <p>Projects Delivered</p>
+                    <div class="visual-card vc-2">
+                        <div class="vc-icon">🛡️</div>
+                        <h4>Secure by Default</h4>
+                        <p>Security baked in from day one</p>
                     </div>
-                    <div class="stat-box">
-                        <h3>50+</h3>
-                        <p>Team Members</p>
+                    <div class="visual-card vc-3">
+                        <div class="vc-icon">📈</div>
+                        <h4>Built to Scale</h4>
+                        <p>Architecture that grows with you</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services" class="services">
         <div class="container">
-            <h2>Our Core Services</h2>
+            <div class="section-label centered">What We Do</div>
+            <h2>Everything your business<br>needs to move faster.</h2>
             <div class="services-grid">
                 <div class="service-card">
+                    <div class="service-number">01</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="2" y1="20" x2="22" y2="20"></line>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
                     </div>
-                    <h3>Web Development</h3>
-                    <p>Custom-built, scalable web applications tailored to your business needs. Full-stack expertise in modern frameworks and technologies.</p>
+                    <h3>Product Engineering</h3>
+                    <p>Custom web and application development built for performance, reliability, and growth — using modern tech stacks that scale.</p>
+                    <a href="#contact" class="service-link">Work with us →</a>
                 </div>
-
                 <div class="service-card">
+                    <div class="service-number">02</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
-                            <path d="M12 6v6l4 2"></path>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
                     </div>
-                    <h3>Digital Strategy</h3>
-                    <p>Comprehensive digital transformation consulting to accelerate your business growth and market competitiveness.</p>
+                    <h3>AI & Automation</h3>
+                    <p>Intelligent workflows, machine learning integrations, and automation pipelines that eliminate bottlenecks and unlock new capabilities.</p>
+                    <a href="#contact" class="service-link">Work with us →</a>
                 </div>
-
                 <div class="service-card">
+                    <div class="service-number">03</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
-                            <line x1="7" y1="7" x2="7.01" y2="7"></line>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
                     </div>
-                    <h3>Mobile Apps</h3>
-                    <p>Native and cross-platform mobile applications for iOS and Android, optimized for performance and user experience.</p>
+                    <h3>Cloud Architecture</h3>
+                    <p>Enterprise-grade infrastructure design, cloud migration, and DevOps that keeps your systems fast, secure, and always available.</p>
+                    <a href="#contact" class="service-link">Work with us →</a>
                 </div>
-
                 <div class="service-card">
+                    <div class="service-number">04</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="1"></circle>
-                            <path d="M12 1v6m0 6v6"></path>
-                            <path d="M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24"></path>
-                            <path d="M1 12h6m6 0h6"></path>
-                            <path d="M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24"></path>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
                     </div>
-                    <h3>Cloud Solutions</h3>
-                    <p>Enterprise-grade cloud infrastructure, migration, and management services for secure and scalable operations.</p>
+                    <h3>Mobile Experiences</h3>
+                    <p>Native iOS and Android apps — and cross-platform solutions — built with the polish and performance users demand.</p>
+                    <a href="#contact" class="service-link">Work with us →</a>
                 </div>
-
                 <div class="service-card">
+                    <div class="service-number">05</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
                     </div>
-                    <h3>Data Analytics</h3>
-                    <p>Advanced analytics and business intelligence solutions to drive data-driven decision making and insights.</p>
+                    <h3>Growth Analytics</h3>
+                    <p>Business intelligence dashboards and data pipelines that turn raw numbers into clear decisions and competitive edge.</p>
+                    <a href="#contact" class="service-link">Work with us →</a>
                 </div>
-
                 <div class="service-card">
+                    <div class="service-number">06</div>
                     <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                     </div>
                     <h3>Cybersecurity</h3>
-                    <p>Comprehensive security audits and protection strategies to safeguard your digital assets and customer data.</p>
+                    <p>Proactive security audits, vulnerability assessments, and compliance frameworks to protect your assets and build trust at scale.</p>
+                    <a href="#contact" class="service-link">Work with us →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to build something<br><span class="gradient-text">that matters?</span></h2>
+                <p>Tell us about your project. We'll get back to you within 24 hours.</p>
+                <button class="btn btn-primary btn-lg" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Let's Talk</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
+            <div class="section-label centered">Contact</div>
+            <h2>Start the conversation.</h2>
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <div class="info-item">
-                        <h3>Address</h3>
-                        <p>123 Tech Avenue<br>San Francisco, CA 94105</p>
+                        <div class="info-icon">📍</div>
+                        <div><h4>Office</h4><p>340 Pine Street, Suite 800<br>San Francisco, CA 94104</p></div>
                     </div>
                     <div class="info-item">
-                        <h3>Email</h3>
-                        <p><a href="mailto:info@musatech.com">info@musatech.com</a></p>
+                        <div class="info-icon">✉️</div>
+                        <div><h4>Email</h4><p><a href="mailto:hello@nexlify.io">hello@nexlify.io</a></p></div>
                     </div>
                     <div class="info-item">
-                        <h3>Phone</h3>
-                        <p><a href="tel:+14155551234">+1 (415) 555-1234</a></p>
+                        <div class="info-icon">📞</div>
+                        <div><h4>Phone</h4><p><a href="tel:+14155550192">+1 (415) 555-0192</a></p></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div><h4>Response Time</h4><p>We reply within 24 hours, always.</p></div>
                     </div>
                 </div>
-
                 <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service...</option>
+                            <option value="product-engineering">Product Engineering</option>
+                            <option value="ai-automation">AI & Automation</option>
+                            <option value="cloud">Cloud Architecture</option>
+                            <option value="mobile">Mobile Experiences</option>
+                            <option value="analytics">Growth Analytics</option>
+                            <option value="security">Cybersecurity</option>
+                            <option value="other">Other / Not Sure Yet</option>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <label for="message">Tell us about your project</label>
+                        <textarea id="message" name="message" placeholder="What are you building? What's your timeline? Any details help..." rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Send Message</button>
                     <p class="form-status" id="formStatus"></p>
                 </form>
             </div>
@@ -191,11 +250,41 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Musa Tech Solutions. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" class="social-link">LinkedIn</a>
-                <a href="#" class="social-link">Twitter</a>
-                <a href="#" class="social-link">GitHub</a>
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-icon">N</span>
+                        <span class="logo-text">nexlify</span>
+                    </a>
+                    <p>Amplifying what's next for ambitious businesses everywhere.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h5>Services</h5>
+                        <ul>
+                            <li><a href="#services">Product Engineering</a></li>
+                            <li><a href="#services">AI & Automation</a></li>
+                            <li><a href="#services">Cloud Architecture</a></li>
+                            <li><a href="#services">Mobile Experiences</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#contact">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexlify. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter / X</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
             </div>
         </div>
     </footer>
