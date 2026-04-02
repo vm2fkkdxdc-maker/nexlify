@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 160" role="img" aria-label="Nexlify horizontal logo">
+  <defs>
+    <linearGradient id="nexlifyGradientHorizontal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="136" height="136" rx="34" fill="url(#nexlifyGradientHorizontal)" />
+  <path d="M46 114V46h16l40 49V46h16v68h-15L62 63v51H46z" fill="#ffffff" />
+  <text x="182" y="102" font-family="Poppins, Segoe UI, Arial, sans-serif" font-size="70" font-weight="700" fill="#0f0a1e" letter-spacing="-1.5">nexlify</text>
+</svg>

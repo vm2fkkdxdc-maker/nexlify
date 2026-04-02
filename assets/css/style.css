@@ -161,17 +161,10 @@ p { color: var(--text-mid); line-height: 1.75; }
     font-size: 1.4rem;
     color: var(--text-dark);
 }
-.logo-icon {
+.logo-image {
     width: 36px;
     height: 36px;
-    background: var(--gradient);
-    color: white;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    font-weight: 900;
+    display: block;
 }
 .logo-text { letter-spacing: -0.03em; }
 
@@ -756,7 +749,10 @@ p { color: var(--text-mid); line-height: 1.75; }
 
 .footer-brand { max-width: 300px; }
 .footer-brand .logo { margin-bottom: 1rem; }
-.footer-brand .logo-icon { background: var(--gradient); }
+.footer-brand .logo-image {
+    width: 34px;
+    height: 34px;
+}
 .footer-brand .logo-text { color: white; }
 .footer-brand p { font-size: 0.9rem; color: rgba(255,255,255,0.5); }
 
