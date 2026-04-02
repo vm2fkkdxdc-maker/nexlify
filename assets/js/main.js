@@ -5,6 +5,7 @@
 // Mobile Menu Toggle
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const navMenu = document.getElementById('navMenu');
+const header = document.getElementById('header');
 
 if (mobileMenuBtn) {
     mobileMenuBtn.addEventListener('click', () => {
@@ -17,8 +18,10 @@ if (mobileMenuBtn) {
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        mobileMenuBtn.classList.remove('active');
-        navMenu.classList.remove('active');
+        if (mobileMenuBtn && navMenu) {
+            mobileMenuBtn.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
     });
 });
 
@@ -61,7 +64,7 @@ if (contactForm) {
                 showStatus(`Thanks ${name}! Your message was sent. We'll be in touch soon.`, 'success');
                 contactForm.reset();
             } else {
-                showStatus('Something went wrong. Please email us directly at info@musatech.com.', 'error');
+                showStatus('Something went wrong. Please email us directly at hello@nexlify.io.', 'error');
             }
         } catch {
             showStatus('Network error. Please check your connection and try again.', 'error');
@@ -84,11 +87,14 @@ function showStatus(msg, type) {
 
 // Add scroll effect to header
 window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
+    if (!header) {
+        return;
+    }
+
     if (window.scrollY > 50) {
-        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+        header.classList.add('scrolled');
     } else {
-        header.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
+        header.classList.remove('scrolled');
     }
 });
 
@@ -110,20 +116,23 @@ const observer = new IntersectionObserver((entries) => {
 
 // Apply observer to service cards and stat boxes
 const serviceCards = document.querySelectorAll('.service-card');
-const statBoxes = document.querySelectorAll('.stat-box');
+const animatedCards = document.querySelectorAll('.service-card, .visual-card, .stat-item');
 
-serviceCards.forEach(card => {
+animatedCards.forEach((card, index) => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    card.style.transition = `opacity 0.5s ease ${index * 0.04}s, transform 0.5s ease ${index * 0.04}s`;
     observer.observe(card);
 });
 
-statBoxes.forEach(box => {
-    box.style.opacity = '0';
-    box.style.transform = 'translateY(20px)';
-    box.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(box);
+serviceCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-6px)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0)';
+    });
 });
 
-console.log('Musa Tech Solutions - Website loaded successfully');
+console.log('Nexlify website loaded successfully');
