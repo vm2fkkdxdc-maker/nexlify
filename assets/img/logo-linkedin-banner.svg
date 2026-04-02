@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" role="img" aria-label="Nexlify LinkedIn banner">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0a1e"/>
+      <stop offset="55%" stop-color="#241840"/>
+      <stop offset="100%" stop-color="#0b2235"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1584" height="396" fill="url(#bg)"/>
+  <circle cx="1400" cy="80" r="180" fill="#7c3aed" opacity="0.18"/>
+  <circle cx="1180" cy="300" r="220" fill="#06b6d4" opacity="0.16"/>
+  <rect x="80" y="102" width="192" height="192" rx="46" fill="url(#brand)"/>
+  <path d="M128 252V144h22l52 64v-64h22v108h-20l-54-66v66h-22z" fill="#fff"/>
+  <text x="320" y="202" fill="#ffffff" font-family="Poppins, Segoe UI, Arial, sans-serif" font-size="96" font-weight="700" letter-spacing="-2">nexlify</text>
+  <text x="322" y="252" fill="#d6d1ea" font-family="Poppins, Segoe UI, Arial, sans-serif" font-size="36" font-weight="500">Automate your business. Amplify what's next.</text>
+</svg>
