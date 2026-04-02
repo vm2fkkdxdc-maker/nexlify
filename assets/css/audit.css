@@ -1,0 +1,216 @@
+/* ===========================
+   Nexlify — Audit Page Styles
+   =========================== */
+
+/* Hero */
+.audit-hero {
+    position: relative;
+    padding: 120px 24px 80px;
+    background: var(--dark);
+    overflow: hidden;
+    text-align: center;
+}
+
+.audit-hero-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.audit-hero h1 {
+    color: white;
+    margin-bottom: 1.25rem;
+}
+
+.audit-hero p {
+    color: rgba(255,255,255,0.65);
+    font-size: 1.1rem;
+    max-width: 620px;
+    margin: 0 auto 2rem;
+    line-height: 1.75;
+}
+
+.audit-hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.audit-proof {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proof-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255,255,255,0.75);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.proof-icon { font-size: 1.1rem; }
+
+/* Form Section */
+.audit-form-section {
+    padding: 80px 24px;
+    background: var(--light-bg);
+}
+
+.audit-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Form Card */
+.audit-form-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.audit-form-card h2 {
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.audit-form-card > p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.audit-form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-note {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    text-align: center;
+    margin: 0;
+}
+
+/* What's Included */
+.audit-includes h3 {
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.include-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.include-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.include-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.include-item h4 {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.include-item p {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.audit-cta-box {
+    background: var(--gradient-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.audit-cta-box p {
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+/* Trust Bar */
+.audit-trust {
+    padding: 60px 24px;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.trust-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.trust-item p {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* CTA actions in main site banner */
+.cta-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .audit-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    .trust-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px) {
+    .audit-hero { padding: 100px 16px 60px; }
+    .audit-proof { flex-direction: column; align-items: center; gap: 1rem; }
+    .audit-form-card { padding: 1.5rem; }
+    .trust-grid { grid-template-columns: repeat(2, 1fr); }
+}

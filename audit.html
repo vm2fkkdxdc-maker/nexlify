@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get a free SEO audit for your website from Nexlify. We'll uncover exactly what's holding your search rankings back — delivered in 48 hours.">
+    <meta name="author" content="Nexlify">
+    <title>Free SEO Audit | Nexlify</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/audit.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">N</span>
+                        <span class="logo-text">nexlify</span>
+                    </a>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html#services" class="nav-link">Services</a></li>
+                        <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                        <li><a href="audit.html" class="nav-link">Free SEO Audit</a></li>
+                        <li><a href="https://calendly.com/nexlifylimited" target="_blank" rel="noopener" class="nav-link nav-cta">Book a Free Call</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="audit-hero">
+        <div class="audit-hero-bg">
+            <div class="hero-orb orb-1"></div>
+            <div class="hero-orb orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="audit-hero-content">
+                <div class="hero-badge">✦ 100% Free — No Credit Card Required</div>
+                <h1>Find out why your<br><span class="gradient-text">site isn't ranking.</span></h1>
+                <p>Submit your website URL and we'll hand-deliver a detailed SEO audit report within 48 hours — covering technical issues, keyword gaps, speed problems, and quick wins you can act on today.</p>
+                <div class="audit-proof">
+                    <div class="proof-item"><span class="proof-icon">⚡</span> Delivered in 48 hours</div>
+                    <div class="proof-item"><span class="proof-icon">🎯</span> Actionable recommendations</div>
+                    <div class="proof-item"><span class="proof-icon">🔒</span> No spam, ever</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audit Form -->
+    <section class="audit-form-section">
+        <div class="container">
+            <div class="audit-layout">
+
+                <!-- Form -->
+                <div class="audit-form-wrap">
+                    <div class="audit-form-card">
+                        <h2>Request Your Free Audit</h2>
+                        <p>Fill in your details below and we'll get to work immediately.</p>
+
+                        <form id="auditForm" action="https://formspree.io/f/mpqojlyd" method="POST">
+                            <input type="hidden" name="_subject" value="New Free SEO Audit Request">
+
+                            <div class="form-group">
+                                <label for="auditName">Your Name</label>
+                                <input type="text" id="auditName" name="name" placeholder="Jane Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="auditEmail">Email Address</label>
+                                <input type="email" id="auditEmail" name="email" placeholder="jane@yourbusiness.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="auditUrl">Your Website URL</label>
+                                <input type="url" id="auditUrl" name="website_url" placeholder="https://yourbusiness.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="auditBusiness">Type of Business</label>
+                                <select id="auditBusiness" name="business_type">
+                                    <option value="">Select your industry...</option>
+                                    <option value="retail">Retail / E-commerce</option>
+                                    <option value="service">Service Business</option>
+                                    <option value="restaurant">Restaurant / Food</option>
+                                    <option value="healthcare">Healthcare / Medical</option>
+                                    <option value="real-estate">Real Estate</option>
+                                    <option value="legal">Legal / Finance</option>
+                                    <option value="contractor">Contractor / Trades</option>
+                                    <option value="saas">SaaS / Tech</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="auditGoal">Biggest SEO challenge?</label>
+                                <textarea id="auditGoal" name="seo_challenge" rows="3" placeholder="e.g. We don't show up on Google at all, or we rank but get no traffic..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full" id="auditSubmitBtn">Send My Free Audit Request</button>
+                            <p class="form-note">We'll email your full audit report within 48 hours. No sales pitch — just results.</p>
+                            <p class="form-status" id="auditStatus"></p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- What's Included -->
+                <div class="audit-includes">
+                    <h3>What's included in your audit</h3>
+                    <div class="include-list">
+                        <div class="include-item">
+                            <div class="include-icon">🔍</div>
+                            <div>
+                                <h4>Technical SEO Check</h4>
+                                <p>Crawl errors, broken links, missing meta tags, duplicate content, and indexing issues.</p>
+                            </div>
+                        </div>
+                        <div class="include-item">
+                            <div class="include-icon">⚡</div>
+                            <div>
+                                <h4>Page Speed Analysis</h4>
+                                <p>Core Web Vitals scores and specific fixes to speed up your site on mobile and desktop.</p>
+                            </div>
+                        </div>
+                        <div class="include-item">
+                            <div class="include-icon">🎯</div>
+                            <div>
+                                <h4>Keyword Gap Report</h4>
+                                <p>Keywords your competitors rank for that you're missing — and how to capture them.</p>
+                            </div>
+                        </div>
+                        <div class="include-item">
+                            <div class="include-icon">📱</div>
+                            <div>
+                                <h4>Mobile Usability</h4>
+                                <p>How your site performs on mobile devices and what Google sees when it crawls you.</p>
+                            </div>
+                        </div>
+                        <div class="include-item">
+                            <div class="include-icon">🔗</div>
+                            <div>
+                                <h4>Backlink Overview</h4>
+                                <p>Your current domain authority and what kind of link building will move the needle.</p>
+                            </div>
+                        </div>
+                        <div class="include-item">
+                            <div class="include-icon">📋</div>
+                            <div>
+                                <h4>Priority Action Plan</h4>
+                                <p>A ranked list of fixes — starting with the ones that'll have the biggest impact fastest.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="audit-cta-box">
+                        <p>Prefer to talk through your site first?</p>
+                        <a href="https://calendly.com/nexlifylimited" target="_blank" rel="noopener" class="btn btn-outline">Book a Free 15-Min Call</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="audit-trust">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-number">48hr</div>
+                    <p>Average report delivery time</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">$0</div>
+                    <p>Cost to you — completely free</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">6+</div>
+                    <p>Areas of your site analyzed</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">Utah</div>
+                    <p>Local business, real people</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexlify Limited LLC. All rights reserved.</p>
+                <a href="index.html" style="color: rgba(255,255,255,0.5); font-size:0.9rem;">← Back to main site</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/audit.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
