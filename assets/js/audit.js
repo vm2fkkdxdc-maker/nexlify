@@ -65,7 +65,7 @@ if (auditForm) {
                     </div>
                 `;
             } else {
-                showAuditStatus('Something went wrong. Please email us at Chanelmarie05@gmail.com.', 'error');
+                showAuditStatus('Something went wrong. Please email us at hello@nexlifylimited.com.', 'error');
                 auditSubmitBtn.disabled = false;
                 auditSubmitBtn.textContent = 'Send My Free Audit Request';
             }
