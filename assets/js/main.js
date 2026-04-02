@@ -64,7 +64,7 @@ if (contactForm) {
                 showStatus(`Thanks ${name}! Your message was sent. We'll be in touch soon.`, 'success');
                 contactForm.reset();
             } else {
-                showStatus('Something went wrong. Please email us directly at hello@nexlify.io.', 'error');
+                showStatus('Something went wrong. Please email us directly at Chanelmarie05@gmail.com.', 'error');
             }
         } catch {
             showStatus('Network error. Please check your connection and try again.', 'error');
