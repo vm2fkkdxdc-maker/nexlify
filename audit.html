@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get a free SEO audit for your website from Nexlify. We'll uncover exactly what's holding your search rankings back — delivered in 48 hours.">
+    <meta name="description" content="Get a free automation analysis for your business from Nexlify. We'll identify which tasks and workflows can be automated — delivered in 48 hours.">
     <meta name="author" content="Nexlify">
-    <title>Free SEO Audit | Nexlify</title>
+    <title>Free Automation Analysis | Nexlify</title>
     <link rel="icon" type="image/svg+xml" href="assets/img/logo-mark.svg">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/audit.css">
@@ -29,7 +29,7 @@
                     <ul class="nav-menu" id="navMenu">
                         <li><a href="index.html#services" class="nav-link">Services</a></li>
                         <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
-                        <li><a href="audit.html" class="nav-link">Free SEO Audit</a></li>
+                        <li><a href="audit.html" class="nav-link">Free Automation Analysis</a></li>
                         <li><a href="https://calendly.com/nexlifylimited" target="_blank" rel="noopener" class="nav-link nav-cta">Book a Free Call</a></li>
                     </ul>
                 </div>
@@ -46,8 +46,8 @@
         <div class="container">
             <div class="audit-hero-content">
                 <div class="hero-badge">✦ 100% Free — No Credit Card Required</div>
-                <h1>Find out why your<br><span class="gradient-text">site isn't ranking.</span></h1>
-                <p>Submit your website URL and we'll hand-deliver a detailed SEO audit report within 48 hours — covering technical issues, keyword gaps, speed problems, and quick wins you can act on today.</p>
+                <h1>Discover which tasks in<br><span class="gradient-text">your business can be automated.</span></h1>
+                <p>Tell us about your team and workflows, and we'll hand-deliver a detailed automation analysis within 48 hours — identifying repetitive tasks, integration opportunities, and the highest-ROI automations you can act on today.</p>
                 <div class="audit-proof">
                     <div class="proof-item"><span class="proof-icon">⚡</span> Delivered in 48 hours</div>
                     <div class="proof-item"><span class="proof-icon">🎯</span> Actionable recommendations</div>
@@ -65,11 +65,11 @@
                 <!-- Form -->
                 <div class="audit-form-wrap">
                     <div class="audit-form-card">
-                        <h2>Request Your Free Audit</h2>
+                        <h2>Request Your Free Analysis</h2>
                         <p>Fill in your details below and we'll get to work immediately.</p>
 
                         <form id="auditForm" action="https://formspree.io/f/mpqojlyd" method="POST">
-                            <input type="hidden" name="_subject" value="New Free SEO Audit Request">
+                            <input type="hidden" name="_subject" value="New Free Automation Analysis Request">
 
                             <div class="form-group">
                                 <label for="auditName">Your Name</label>
@@ -80,8 +80,8 @@
                                 <input type="email" id="auditEmail" name="email" placeholder="jane@yourbusiness.com" required>
                             </div>
                             <div class="form-group">
-                                <label for="auditUrl">Your Website URL</label>
-                                <input type="url" id="auditUrl" name="website_url" placeholder="https://yourbusiness.com" required>
+                                <label for="auditCompany">Company / Organization Name</label>
+                                <input type="text" id="auditCompany" name="company" placeholder="Acme Co." required>
                             </div>
                             <div class="form-group">
                                 <label for="auditBusiness">Type of Business</label>
@@ -99,12 +99,27 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="auditGoal">Biggest SEO challenge?</label>
-                                <textarea id="auditGoal" name="seo_challenge" rows="3" placeholder="e.g. We don't show up on Google at all, or we rank but get no traffic..."></textarea>
+                                <label for="auditTeamSize">Team Size</label>
+                                <select id="auditTeamSize" name="team_size">
+                                    <option value="">Select team size...</option>
+                                    <option value="solo">Just me (solopreneur)</option>
+                                    <option value="2-5">2–5 people</option>
+                                    <option value="6-20">6–20 people</option>
+                                    <option value="21-50">21–50 people</option>
+                                    <option value="51+">51+ people</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="auditTools">Tools &amp; software your team uses</label>
+                                <input type="text" id="auditTools" name="current_tools" placeholder="e.g. Google Workspace, HubSpot, QuickBooks, Slack...">
+                            </div>
+                            <div class="form-group">
+                                <label for="auditGoal">What tasks eat up most of your team's time?</label>
+                                <textarea id="auditGoal" name="time_consuming_tasks" rows="3" placeholder="e.g. Manually entering data between systems, following up with leads, generating weekly reports..."></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-full" id="auditSubmitBtn">Send My Free Audit Request</button>
-                            <p class="form-note">We'll email your full audit report within 48 hours. No sales pitch — just results.</p>
+                            <button type="submit" class="btn btn-primary btn-full" id="auditSubmitBtn">Request My Free Analysis</button>
+                            <p class="form-note">We'll email your full automation analysis within 48 hours. No sales pitch — just results.</p>
                             <p class="form-status" id="auditStatus"></p>
                         </form>
                     </div>
@@ -112,54 +127,54 @@
 
                 <!-- What's Included -->
                 <div class="audit-includes">
-                    <h3>What's included in your audit</h3>
+                    <h3>What's included in your analysis</h3>
                     <div class="include-list">
                         <div class="include-item">
-                            <div class="include-icon">🔍</div>
+                            <div class="include-icon">🗺️</div>
                             <div>
-                                <h4>Technical SEO Check</h4>
-                                <p>Crawl errors, broken links, missing meta tags, duplicate content, and indexing issues.</p>
+                                <h4>Workflow Mapping</h4>
+                                <p>We document your current processes and identify every manual, repetitive step that could be automated.</p>
                             </div>
                         </div>
                         <div class="include-item">
-                            <div class="include-icon">⚡</div>
+                            <div class="include-icon">🤖</div>
                             <div>
-                                <h4>Page Speed Analysis</h4>
-                                <p>Core Web Vitals scores and specific fixes to speed up your site on mobile and desktop.</p>
+                                <h4>Automation Opportunity Report</h4>
+                                <p>A prioritized list of tasks ripe for automation — ranked by time saved and ease of implementation.</p>
                             </div>
                         </div>
                         <div class="include-item">
-                            <div class="include-icon">🎯</div>
+                            <div class="include-icon">🔌</div>
                             <div>
-                                <h4>Keyword Gap Report</h4>
-                                <p>Keywords your competitors rank for that you're missing — and how to capture them.</p>
+                                <h4>Tool &amp; Integration Assessment</h4>
+                                <p>Review of your existing software stack and where tools like Zapier, Make.com, or AI can bridge the gaps.</p>
                             </div>
                         </div>
                         <div class="include-item">
-                            <div class="include-icon">📱</div>
+                            <div class="include-icon">⏱️</div>
                             <div>
-                                <h4>Mobile Usability</h4>
-                                <p>How your site performs on mobile devices and what Google sees when it crawls you.</p>
+                                <h4>Time &amp; Cost Savings Estimate</h4>
+                                <p>A realistic estimate of hours per week your team could reclaim — and what that translates to in dollars.</p>
                             </div>
                         </div>
                         <div class="include-item">
-                            <div class="include-icon">🔗</div>
+                            <div class="include-icon">🧠</div>
                             <div>
-                                <h4>Backlink Overview</h4>
-                                <p>Your current domain authority and what kind of link building will move the needle.</p>
+                                <h4>AI Readiness Check</h4>
+                                <p>Which parts of your business are ready for AI-powered automation and where to start for maximum impact.</p>
                             </div>
                         </div>
                         <div class="include-item">
                             <div class="include-icon">📋</div>
                             <div>
-                                <h4>Priority Action Plan</h4>
-                                <p>A ranked list of fixes — starting with the ones that'll have the biggest impact fastest.</p>
+                                <h4>Prioritized Action Plan</h4>
+                                <p>A step-by-step roadmap — starting with quick wins that deliver results in days, not months.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="audit-cta-box">
-                        <p>Prefer to talk through your site first?</p>
+                        <p>Prefer to walk through your workflows live?</p>
                         <a href="https://calendly.com/nexlifylimited" target="_blank" rel="noopener" class="btn btn-outline">Book a Free 15-Min Call</a>
                     </div>
                 </div>
@@ -174,7 +189,7 @@
             <div class="trust-grid">
                 <div class="trust-item">
                     <div class="trust-number">48hr</div>
-                    <p>Average report delivery time</p>
+                    <p>Average analysis delivery time</p>
                 </div>
                 <div class="trust-item">
                     <div class="trust-number">$0</div>
@@ -182,7 +197,7 @@
                 </div>
                 <div class="trust-item">
                     <div class="trust-number">6+</div>
-                    <p>Areas of your site analyzed</p>
+                    <p>Areas of your business analyzed</p>
                 </div>
                 <div class="trust-item">
                     <div class="trust-number">Utah</div>
