@@ -135,4 +135,35 @@ serviceCards.forEach(card => {
     });
 });
 
+// Service card detail toggles
+document.querySelectorAll('.service-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const card = btn.closest('.service-card');
+        const details = card.querySelector('.service-details');
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        details.classList.toggle('open', !expanded);
+    });
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const answer = item.querySelector('.faq-answer');
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+        // Collapse all other open items
+        document.querySelectorAll('.faq-item').forEach(other => {
+            if (other !== item) {
+                other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                other.querySelector('.faq-answer').classList.remove('open');
+            }
+        });
+
+        btn.setAttribute('aria-expanded', String(!expanded));
+        answer.classList.toggle('open', !expanded);
+    });
+});
+
 console.log('Nexlify website loaded successfully');
