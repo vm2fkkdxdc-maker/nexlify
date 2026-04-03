@@ -679,7 +679,7 @@ p { color: var(--text-mid); line-height: 1.75; }
     gap: 0.4rem;
     margin: 0;
 }
-.service-details.open { max-height: 300px; margin: 0.5rem 0; }
+.service-details.open { max-height: 600px; margin: 0.5rem 0; }
 .service-details li {
     font-size: 0.85rem;
     color: var(--text-mid);
@@ -694,6 +694,10 @@ p { color: var(--text-mid); line-height: 1.75; }
     font-weight: 700;
     font-size: 0.8rem;
 }
+
+.pricing-tier--analysis { color: #00b894; }
+.pricing-tier--quick-wins { color: #6c5ce7; }
+.pricing-tier--full-build { color: #0984e3; }
 
 /* Pricing note */
 .pricing-note {
@@ -822,7 +826,7 @@ p { color: var(--text-mid); line-height: 1.75; }
     overflow: hidden;
     transition: max-height 0.35s ease;
 }
-.faq-answer.open { max-height: 300px; }
+.faq-answer.open { max-height: 600px; }
 .faq-answer p {
     padding: 0 1.5rem 1.25rem;
     font-size: 0.95rem;
