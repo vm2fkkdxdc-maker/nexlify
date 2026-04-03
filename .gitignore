@@ -1,0 +1,10 @@
+# Generated report output
+*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
