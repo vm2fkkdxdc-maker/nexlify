@@ -1,5 +1,5 @@
 /* ===========================
-   Audit Page — Form Handler
+   Automation Analysis Page — Form Handler
    =========================== */
 
 // Mobile Menu (reuse same pattern)
@@ -21,7 +21,7 @@ if (header) {
     });
 }
 
-// Audit Form Handler
+// Analysis Form Handler
 const auditForm = document.getElementById('auditForm');
 const auditSubmitBtn = document.getElementById('auditSubmitBtn');
 const auditStatus = document.getElementById('auditStatus');
@@ -32,10 +32,10 @@ if (auditForm) {
 
         const name = document.getElementById('auditName').value.trim();
         const email = document.getElementById('auditEmail').value.trim();
-        const url = document.getElementById('auditUrl').value.trim();
+        const company = document.getElementById('auditCompany').value.trim();
 
-        if (!name || !email || !url) {
-            showAuditStatus('Please fill in your name, email, and website URL.', 'error');
+        if (!name || !email || !company) {
+            showAuditStatus('Please fill in your name, email, and company name.', 'error');
             return;
         }
 
@@ -60,19 +60,19 @@ if (auditForm) {
                     <div style="text-align:center; padding: 2rem 0;">
                         <div style="font-size:3rem; margin-bottom:1rem;">✅</div>
                         <h3 style="color: var(--text-dark); margin-bottom:0.75rem;">You're all set, ${name}!</h3>
-                        <p style="color: var(--text-light);">We're reviewing your site now. Your full audit report will land in <strong>${email}</strong> within 48 hours.</p>
+                        <p style="color: var(--text-light);">We're analyzing your workflows now. Your full automation analysis will land in <strong>${email}</strong> within 48 hours.</p>
                         <a href="index.html" style="display:inline-block; margin-top:1.5rem; color:var(--primary); font-weight:600;">← Back to Nexlify</a>
                     </div>
                 `;
             } else {
                 showAuditStatus('Something went wrong. Please email us at hello@nexlifylimited.com.', 'error');
                 auditSubmitBtn.disabled = false;
-                auditSubmitBtn.textContent = 'Send My Free Audit Request';
+                auditSubmitBtn.textContent = 'Request My Free Analysis';
             }
         } catch {
             showAuditStatus('Network error. Please check your connection and try again.', 'error');
             auditSubmitBtn.disabled = false;
-            auditSubmitBtn.textContent = 'Send My Free Audit Request';
+            auditSubmitBtn.textContent = 'Request My Free Analysis';
         }
     });
 }
