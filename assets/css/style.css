@@ -174,8 +174,8 @@ p { color: var(--text-soft); }
 }
 
 .logo-image-full {
-    height: 52px;
-    width: auto;
+    width: 128px;
+    height: auto;
     display: block;
 }
 
