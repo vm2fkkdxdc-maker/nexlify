@@ -515,7 +515,27 @@ p { color: var(--text-mid); line-height: 1.75; }
 .service-icon svg { width: 26px; height: 26px; }
 
 .service-card h3 { font-size: 1.1rem; color: var(--text-dark); }
-.service-card p { font-size: 0.92rem; color: var(--text-light); line-height: 1.7; margin-bottom: 1.5rem; }
+.service-card p { font-size: 0.92rem; color: var(--text-light); line-height: 1.7; margin-bottom: 1rem; }
+
+.service-detail-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+.service-detail-list li {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    padding: 0.3rem 0 0.3rem 1.25rem;
+    position: relative;
+    line-height: 1.5;
+}
+.service-detail-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primary-light);
+    font-size: 0.8rem;
+}
 
 .service-link {
     font-size: 0.88rem;
