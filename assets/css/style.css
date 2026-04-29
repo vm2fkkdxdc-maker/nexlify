@@ -422,6 +422,58 @@ p { color: var(--text-soft); }
     gap: 1rem;
 }
 
+.who-serve {
+    padding: 92px 24px;
+    background: var(--white);
+}
+
+.who-serve-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.who-card {
+    background: var(--sky-50);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.6rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.who-card h3 {
+    color: var(--ink-900);
+    margin-bottom: 0.6rem;
+}
+
+.who-card p {
+    font-size: 0.92rem;
+    margin-bottom: 0.9rem;
+}
+
+.who-list {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.who-list li {
+    font-size: 0.9rem;
+    color: var(--text-soft);
+    padding-left: 1.1rem;
+    position: relative;
+}
+
+.who-list li::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: var(--sun-500);
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
+}
+
 .service-card {
     background: var(--white);
     border: 1px solid var(--border);
@@ -784,7 +836,8 @@ p { color: var(--text-soft); }
     .stat-item { flex: 1 1 42%; min-width: 120px; }
 
     .services-grid,
-    .pricing-grid { grid-template-columns: 1fr; }
+    .pricing-grid,
+    .who-serve-grid { grid-template-columns: 1fr; }
 
     .form-row { grid-template-columns: 1fr; }
 
