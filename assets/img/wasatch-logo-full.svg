@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 220" role="img" aria-label="Wasatch Public Strategy horizontal logo">
+  <defs>
+    <linearGradient id="wSky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#84a7c4"/>
+      <stop offset="1" stop-color="#d7e7f4"/>
+    </linearGradient>
+    <linearGradient id="wSun" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#d99935"/>
+      <stop offset="1" stop-color="#f2c57e"/>
+    </linearGradient>
+  </defs>
+  <circle cx="110" cy="110" r="92" fill="#ffffff"/>
+  <circle cx="110" cy="96" r="70" fill="url(#wSky)"/>
+  <path d="M40 108h140v56H40z" fill="url(#wSun)"/>
+  <path d="M36 142l34-24 16 6 27-24 11 11 9-6 25 16 26 21H36z" fill="#214a73"/>
+  <path d="M66 126l9-6 10 6 27-21 10 8 7-5 13 9-76 9z" fill="#f8fbff" opacity="0.95"/>
+  <path d="M38 142h144v12H38z" fill="#0f2d4a"/>
+  <circle cx="110" cy="110" r="92" fill="none" stroke="#0f2d4a" stroke-width="6"/>
+  <text x="236" y="126" font-family="Newsreader, Georgia, serif" font-size="86" font-weight="700" fill="#0f2d4a" letter-spacing="3">WASATCH</text>
+  <text x="240" y="175" font-family="Sora, Segoe UI, Arial, sans-serif" font-size="38" font-weight="600" fill="#365779" letter-spacing="8">PUBLIC STRATEGY</text>
+</svg>
