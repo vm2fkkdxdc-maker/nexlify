@@ -64,7 +64,7 @@ if (contactForm) {
                 showStatus(`Thanks ${name}! Your message was sent. We'll be in touch soon.`, 'success');
                 contactForm.reset();
             } else {
-                showStatus('Something went wrong. Please email us directly at hello@nexlifylimited.com.', 'error');
+                showStatus('Something went wrong. Please email us directly at hello@wasatchpublicstrategy.com.', 'error');
             }
         } catch {
             showStatus('Network error. Please check your connection and try again.', 'error');
@@ -135,4 +135,4 @@ serviceCards.forEach(card => {
     });
 });
 
-console.log('Nexlify website loaded successfully');
+console.log('Wasatch Public Strategy website loaded successfully');

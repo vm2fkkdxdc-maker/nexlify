@@ -61,11 +61,11 @@ if (auditForm) {
                         <div style="font-size:3rem; margin-bottom:1rem;">✅</div>
                         <h3 style="color: var(--text-dark); margin-bottom:0.75rem;">You're all set, ${name}!</h3>
                         <p style="color: var(--text-light);">We're reviewing your site now. Your full audit report will land in <strong>${email}</strong> within 48 hours.</p>
-                        <a href="index.html" style="display:inline-block; margin-top:1.5rem; color:var(--primary); font-weight:600;">← Back to Nexlify</a>
+                        <a href="index.html" style="display:inline-block; margin-top:1.5rem; color:var(--primary); font-weight:600;">← Back to Wasatch Public Strategy</a>
                     </div>
                 `;
             } else {
-                showAuditStatus('Something went wrong. Please email us at hello@nexlifylimited.com.', 'error');
+                showAuditStatus('Something went wrong. Please email us at hello@wasatchpublicstrategy.com.', 'error');
                 auditSubmitBtn.disabled = false;
                 auditSubmitBtn.textContent = 'Send My Free Audit Request';
             }
