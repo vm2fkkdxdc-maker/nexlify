@@ -3,211 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get a free Utah deal stack readiness review from Wasatch Public Strategy. We'll identify funding and workflow blockers — delivered in 48 hours.">
+    <meta http-equiv="refresh" content="0; url=index.html#contact">
     <meta name="author" content="Wasatch Public Strategy">
-    <title>Free Deal Stack Review | Wasatch Public Strategy</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Wasatch Public Strategy</title>
     <link rel="icon" type="image/svg+xml" href="assets/img/wasatch-logo-mark.svg">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/audit.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Sora, Arial, sans-serif;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: linear-gradient(140deg, #eef4fb 0%, #f8f2e6 100%);
+            color: #10243a;
+        }
+
+        main {
+            text-align: center;
+            padding: 32px;
+            max-width: 560px;
+        }
+
+        a {
+            color: #143551;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Navigation -->
-    <header class="header" id="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <a href="index.html" class="logo">
-                        <img src="assets/img/wasatch-logo-full.png" alt="Wasatch Public Strategy" class="logo-image-full">
-                        <img src="assets/img/wasatch-logo-mark.svg" alt="Wasatch Public Strategy" class="logo-image-mark">
-                        <span class="logo-text">wasatch</span>
-                    </a>
-                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <ul class="nav-menu" id="navMenu">
-                        <li><a href="index.html#services" class="nav-link">Services</a></li>
-                        <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
-                        <li><a href="audit.html" class="nav-link">Free Deal Review</a></li>
-                        <li><a href="https://calendly.com/nexlifylimited" target="_blank" rel="noopener" class="nav-link nav-cta">Book a Free Call</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero -->
-    <section class="audit-hero">
-        <div class="audit-hero-bg">
-            <div class="hero-orb orb-1"></div>
-            <div class="hero-orb orb-2"></div>
-        </div>
-        <div class="container">
-            <div class="audit-hero-content">
-                <div class="hero-badge">✦ 100% Free — No Credit Card Required</div>
-                <h1>Find out where your<br><span class="gradient-text">initiative gets stuck.</span></h1>
-                <p>Submit your project context and we will deliver a practical readiness brief within 48 hours — including funding-fit opportunities, execution blockers, and immediate next steps for Utah organizations.</p>
-                <div class="audit-proof">
-                    <div class="proof-item"><span class="proof-icon">⚡</span> Delivered in 48 hours</div>
-                    <div class="proof-item"><span class="proof-icon">🎯</span> Actionable Utah-focused recommendations</div>
-                    <div class="proof-item"><span class="proof-icon">🔒</span> No spam, ever</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Audit Form -->
-    <section class="audit-form-section">
-        <div class="container">
-            <div class="audit-layout">
-
-                <!-- Form -->
-                <div class="audit-form-wrap">
-                    <div class="audit-form-card">
-                        <h2>Request Your Free Deal Review</h2>
-                        <p>Fill in your details below and we'll get to work immediately.</p>
-
-                        <form id="auditForm" action="https://formspree.io/f/mpqojlyd" method="POST">
-                            <input type="hidden" name="_subject" value="New Free Deal Stack Review Request">
-
-                            <div class="form-group">
-                                <label for="auditName">Your Name</label>
-                                <input type="text" id="auditName" name="name" placeholder="Jane Smith" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="auditEmail">Email Address</label>
-                                <input type="email" id="auditEmail" name="email" placeholder="jane@yourbusiness.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="auditUrl">Project, Listing, or Company URL</label>
-                                <input type="url" id="auditUrl" name="website_url" placeholder="https://yourproject.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="auditBusiness">Your Organization Type</label>
-                                <select id="auditBusiness" name="business_type">
-                                    <option value="">Select your organization type...</option>
-                                    <option value="city-county-state">Local / County / State Agency</option>
-                                    <option value="economic-development">Economic Development Organization</option>
-                                    <option value="private-business">Private Business / Operating Company</option>
-                                    <option value="investor">Investor / Capital Partner</option>
-                                    <option value="consultant">Consultant / Advisor</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="auditGoal">Biggest execution challenge?</label>
-                                <textarea id="auditGoal" name="seo_challenge" rows="3" placeholder="e.g. unclear financing stack, underwriting delays, partner coordination, expansion risk..."></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-full" id="auditSubmitBtn">Send My Free Deal Review Request</button>
-                            <p class="form-note">We'll email your readiness brief within 48 hours. No sales pitch — just clear next steps.</p>
-                            <p class="form-status" id="auditStatus"></p>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- What's Included -->
-                <div class="audit-includes">
-                    <h3>What's included in your review</h3>
-                    <div class="include-list">
-                        <div class="include-item">
-                            <div class="include-icon">🔍</div>
-                            <div>
-                                <h4>Structure Snapshot</h4>
-                                <p>A quick view of your current project structure and where complexity is slowing momentum.</p>
-                            </div>
-                        </div>
-                        <div class="include-item">
-                            <div class="include-icon">⚡</div>
-                            <div>
-                                <h4>Execution Bottleneck Scan</h4>
-                                <p>Identification of workflow friction in intake, packet prep, approvals, and communications.</p>
-                            </div>
-                        </div>
-                        <div class="include-item">
-                            <div class="include-icon">🎯</div>
-                            <div>
-                                <h4>Funding-Fit Opportunities</h4>
-                                <p>Potential public financing and incentive pathways worth evaluating based on your context.</p>
-                            </div>
-                        </div>
-                        <div class="include-item">
-                            <div class="include-icon">📱</div>
-                            <div>
-                                <h4>Market Context View</h4>
-                                <p>Wasatch Front considerations that can impact expansion timing, assumptions, and deal strategy.</p>
-                            </div>
-                        </div>
-                        <div class="include-item">
-                            <div class="include-icon">🔗</div>
-                            <div>
-                                <h4>Stakeholder Alignment Risks</h4>
-                                <p>Signals that can delay municipal, partner, or capital conversations if left unresolved.</p>
-                            </div>
-                        </div>
-                        <div class="include-item">
-                            <div class="include-icon">📋</div>
-                            <div>
-                                <h4>Priority Action Plan</h4>
-                                <p>A ranked list of next actions so your team knows what to execute first and why.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="audit-cta-box">
-                        <p>Prefer to talk through your site first?</p>
-                        <a href="https://calendly.com/nexlifylimited" target="_blank" rel="noopener" class="btn btn-outline">Book a Free 15-Min Call</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof -->
-    <section class="audit-trust">
-        <div class="container">
-            <div class="trust-grid">
-                <div class="trust-item">
-                    <div class="trust-number">48hr</div>
-                    <p>Average readiness brief delivery</p>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-number">$0</div>
-                    <p>Cost to you — completely free</p>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-number">6+</div>
-                    <p>Deal factors reviewed</p>
-                </div>
-                <div class="trust-item">
-                    <div class="trust-number">Utah</div>
-                    <p>Local business, real people</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Wasatch Public Strategy. Current legal entity: Nexlify Limited LLC (Utah Entity No. 14679486-0160).</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/company/112613349/" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
-                    <a href="https://www.linkedin.com/in/chanel-flores-47325490/" target="_blank" rel="noopener" class="social-link">Founder LinkedIn</a>
-                    <a href="index.html" class="social-link">Back to main site</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/audit.js"></script>
-    <script src="assets/js/main.js"></script>
+    <main>
+        <p>Redirecting to the contact section.</p>
+        <p><a href="index.html#contact">Continue to Wasatch Public Strategy</a></p>
+    </main>
+    <script>
+        window.location.replace('index.html#contact');
+    </script>
 </body>
 </html>
