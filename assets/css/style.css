@@ -9,10 +9,10 @@
     --ink-500: #466d97;
     --sky-100: #edf4fb;
     --sky-50: #f7fafc;
-    --pine-600: #1f6f64;
-    --pine-500: #2f8d80;
-    --sage-300: #a7d3c9;
-    --sun-500: #f4a259;
+    --pine-600: #a86a17;
+    --pine-500: #cf9030;
+    --sage-300: #e9d8b5;
+    --sun-500: #e9b55d;
     --white: #ffffff;
     --text-main: #10243a;
     --text-soft: #48637f;
@@ -22,8 +22,8 @@
     --shadow-sm: 0 2px 8px rgba(16, 36, 58, 0.06);
     --shadow-md: 0 10px 28px rgba(16, 36, 58, 0.12);
     --shadow-lg: 0 20px 56px rgba(16, 36, 58, 0.16);
-    --gradient-main: linear-gradient(130deg, #16324f 0%, #2d6a8f 55%, #2f8d80 100%);
-    --gradient-soft: linear-gradient(140deg, #e9f2fb 0%, #e4f5f1 100%);
+    --gradient-main: linear-gradient(130deg, #102944 0%, #244f79 56%, #5f7f9f 100%);
+    --gradient-soft: linear-gradient(140deg, #eef4fb 0%, #f8f2e6 100%);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -69,7 +69,7 @@ h4 { font-size: 1rem; margin-bottom: 0.4rem; }
 p { color: var(--text-soft); }
 
 .gradient-text {
-    background: linear-gradient(120deg, #4fa89c 0%, #f7bc7c 100%);
+    background: linear-gradient(120deg, #9ab4cc 0%, #e9b55d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -123,7 +123,7 @@ p { color: var(--text-soft); }
 .btn-primary {
     background: var(--gradient-main);
     color: var(--white);
-    box-shadow: 0 8px 24px rgba(31, 111, 100, 0.28);
+    box-shadow: 0 8px 24px rgba(16, 41, 68, 0.3);
 }
 
 .btn-ghost {
@@ -249,7 +249,7 @@ p { color: var(--text-soft); }
 .orb-1 {
     width: 340px;
     height: 340px;
-    background: rgba(167, 211, 201, 0.28);
+    background: rgba(233, 181, 93, 0.22);
     top: -80px;
     left: -70px;
 }
@@ -257,7 +257,7 @@ p { color: var(--text-soft); }
 .orb-2 {
     width: 260px;
     height: 260px;
-    background: rgba(244, 162, 89, 0.25);
+    background: rgba(154, 180, 204, 0.24);
     right: 5%;
     top: 18%;
 }
@@ -544,7 +544,7 @@ p { color: var(--text-soft); }
     transform: translateX(-50%);
     padding: 6px 14px;
     border-radius: 999px;
-    background: #f9d7a8;
+    background: #f2cc8f;
     color: #1f374f;
     font-size: 0.72rem;
     font-weight: 700;
@@ -554,7 +554,7 @@ p { color: var(--text-soft); }
 
 .cta-banner {
     padding: 92px 24px;
-    background: radial-gradient(circle at 15% 20%, #2f8d80 0%, #143551 42%, #0b1726 100%);
+    background: radial-gradient(circle at 15% 20%, #44698f 0%, #143551 42%, #0b1726 100%);
     color: var(--white);
     text-align: center;
 }

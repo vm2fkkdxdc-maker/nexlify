@@ -1,11 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 160" role="img" aria-label="Nexlify horizontal logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 220" role="img" aria-label="Wasatch Public Strategy horizontal logo">
   <defs>
-    <linearGradient id="nexlifyGradientHorizontal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7c3aed" />
-      <stop offset="100%" stop-color="#06b6d4" />
+    <linearGradient id="wSky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c4f7c"/>
+      <stop offset="1" stop-color="#6f8da8"/>
+    </linearGradient>
+    <linearGradient id="wSun" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#e7b35f"/>
+      <stop offset="1" stop-color="#f4cf86"/>
     </linearGradient>
   </defs>
-  <rect x="12" y="12" width="136" height="136" rx="34" fill="url(#nexlifyGradientHorizontal)" />
-  <path d="M46 114V46h16l40 49V46h16v68h-15L62 63v51H46z" fill="#ffffff" />
-  <text x="182" y="102" font-family="Poppins, Segoe UI, Arial, sans-serif" font-size="70" font-weight="700" fill="#0f0a1e" letter-spacing="-1.5">nexlify</text>
+  <rect x="16" y="16" width="188" height="188" rx="46" fill="#f7fafc"/>
+  <circle cx="110" cy="110" r="66" fill="url(#wSky)"/>
+  <path d="M44 118h132v48H44z" fill="url(#wSun)"/>
+  <path d="M44 154h132v12H44z" fill="#0f2d4a"/>
+  <path d="M48 156l20-23 15 14 24-33 16 18 11-10 33 34z" fill="#173a5d"/>
+  <path d="M71 146l9-9 4 4 18-25 8 9 4-4 14 20H71z" fill="#f8fbff"/>
+  <path d="M58 97l72 10 19-11-19 15-75-11z" fill="#ffffff" opacity="0.92"/>
+  <path d="M127 77l28 7-30 4z" fill="#0f2d4a"/>
+  <rect x="16" y="16" width="188" height="188" rx="46" fill="none" stroke="#0f2d4a" stroke-width="5"/>
+  <text x="236" y="126" font-family="Newsreader, Georgia, serif" font-size="86" font-weight="700" fill="#0f2d4a" letter-spacing="3">WASATCH</text>
+  <text x="240" y="175" font-family="Sora, Segoe UI, Arial, sans-serif" font-size="38" font-weight="600" fill="#365779" letter-spacing="8">PUBLIC STRATEGY</text>
 </svg>
