@@ -823,9 +823,13 @@ p { color: var(--text-soft); }
 @media (max-width: 640px) {
     .container { padding: 0 16px; }
 
-    .logo-image-full { display: none; }
-    .logo-image-mark { display: block; }
-    .logo-text { display: block; font-size: 1.15rem; }
+    .logo { gap: 0; }
+    .logo-image-full {
+        display: block;
+        width: 108px;
+    }
+    .logo-image-mark,
+    .logo-text { display: none; }
 
     .hero {
         padding: 96px 16px 70px;
