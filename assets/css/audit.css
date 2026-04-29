@@ -6,7 +6,7 @@
 .audit-hero {
     position: relative;
     padding: 120px 24px 80px;
-    background: var(--dark);
+    background: var(--gradient-main);
     overflow: hidden;
     text-align: center;
 }
@@ -59,7 +59,7 @@
 /* Form Section */
 .audit-form-section {
     padding: 80px 24px;
-    background: var(--light-bg);
+    background: var(--sky-50);
 }
 
 .audit-layout {
@@ -87,7 +87,7 @@
 }
 
 .audit-form-card > p {
-    color: var(--text-light);
+    color: var(--text-soft);
     margin-bottom: 2rem;
     font-size: 0.95rem;
 }
@@ -100,7 +100,7 @@
 
 .form-note {
     font-size: 0.82rem;
-    color: var(--text-light);
+    color: var(--text-soft);
     text-align: center;
     margin: 0;
 }
@@ -108,7 +108,7 @@
 /* What's Included */
 .audit-includes h3 {
     font-size: 1.3rem;
-    color: var(--text-dark);
+    color: var(--text-main);
     margin-bottom: 1.5rem;
 }
 
@@ -133,13 +133,13 @@
 
 .include-item h4 {
     font-size: 0.95rem;
-    color: var(--text-dark);
+    color: var(--text-main);
     margin-bottom: 0.25rem;
 }
 
 .include-item p {
     font-size: 0.88rem;
-    color: var(--text-light);
+    color: var(--text-soft);
     margin: 0;
     line-height: 1.6;
 }
@@ -178,7 +178,7 @@
 .trust-number {
     font-size: 2.5rem;
     font-weight: 800;
-    background: var(--gradient);
+    background: linear-gradient(120deg, #1c4f7c 0%, #e9b55d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -187,7 +187,7 @@
 
 .trust-item p {
     font-size: 0.88rem;
-    color: var(--text-light);
+    color: var(--text-soft);
     margin: 0;
 }
 
