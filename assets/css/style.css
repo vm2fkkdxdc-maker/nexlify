@@ -826,7 +826,10 @@ p { color: var(--text-soft); }
     .logo { gap: 0; }
     .logo-image-full {
         display: block;
-        width: 108px;
+        width: 56px;
+        height: 56px;
+        object-fit: cover;
+        object-position: center 18%;
     }
     .logo-image-mark,
     .logo-text { display: none; }
