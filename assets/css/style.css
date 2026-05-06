@@ -413,6 +413,9 @@ p { color: var(--text-soft); }
     gap: 1rem;
 }
 
+.founder-spotlight { padding: 1.4rem; }
+.founder-spotlight .section-label { margin-bottom: 0.8rem; }
+
 .visual-card {
     background: var(--white);
     border: 1px solid var(--border);
@@ -480,6 +483,103 @@ p { color: var(--text-soft); }
     left: 0;
     top: 0.55rem;
 }
+
+.about-page-hero {
+    padding: 130px 24px 72px;
+    background: var(--gradient-main);
+    color: var(--white);
+}
+
+.about-page-hero h1 { margin-bottom: 1rem; }
+
+.about-page-hero .section-label {
+    background: rgba(255,255,255,0.18);
+    color: #f7d39f;
+}
+
+.about-page-hero .section-label::before { background: #f7d39f; }
+
+.about-lede {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.08rem;
+    max-width: 880px;
+}
+
+.about-page-section { padding: 84px 24px; }
+.about-page-alt { background: var(--sky-50); }
+
+.container.narrow { max-width: 900px; }
+
+.about-prose {
+    display: grid;
+    gap: 1rem;
+}
+
+.section-intro {
+    text-align: center;
+    margin: -1.4rem auto 2rem;
+    max-width: 780px;
+}
+
+.practice-grid,
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.practice-card,
+.experience-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 1.4rem;
+}
+
+.founder-role {
+    margin: -1.5rem 0 1.6rem;
+    font-style: italic;
+    color: var(--ink-700);
+}
+
+.plain-list {
+    display: grid;
+    gap: 0.55rem;
+    margin-bottom: 2rem;
+}
+
+.plain-list li {
+    color: var(--text-soft);
+    padding-left: 1.1rem;
+    position: relative;
+}
+
+.plain-list li::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: var(--pine-500);
+    position: absolute;
+    left: 0;
+    top: 0.62rem;
+}
+
+.education-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.education-list article {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.2rem;
+}
+
+.education-list p { margin-top: 0.25rem; }
 
 .service-card {
     background: var(--white);
@@ -772,7 +872,9 @@ p { color: var(--text-soft); }
 
 @media (max-width: 1080px) {
     .services-grid,
-    .pricing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pricing-grid,
+    .practice-grid,
+    .experience-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
     .pricing-featured { transform: none; }
 }
@@ -850,7 +952,10 @@ p { color: var(--text-soft); }
 
     .services-grid,
     .pricing-grid,
-    .who-serve-grid { grid-template-columns: 1fr; }
+    .who-serve-grid,
+    .practice-grid,
+    .experience-grid,
+    .education-list { grid-template-columns: 1fr; }
 
     .form-row { grid-template-columns: 1fr; }
 
