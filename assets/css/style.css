@@ -537,6 +537,31 @@ p { color: var(--text-soft); }
     padding: 1.4rem;
 }
 
+.founder-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    margin-top: 1.5rem;
+}
+
+.founder-photo img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .founder-layout {
+        grid-template-columns: 1fr;
+    }
+    .founder-photo img {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+}
+
 .founder-role {
     margin: -1.5rem 0 1.6rem;
     font-style: italic;
