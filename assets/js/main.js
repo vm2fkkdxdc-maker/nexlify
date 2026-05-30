@@ -61,7 +61,7 @@ if (contactForm) {
             });
 
             if (response.ok) {
-                showStatus(`Thanks ${name}! Your message was sent. We'll be in touch soon.`, 'success');
+                showStatus(`Thanks ${name}! Your message was sent. We'll reply within one business day with recommended next steps.`, 'success');
                 contactForm.reset();
             } else {
                 showStatus('Something went wrong. Please email us directly at wasatchpublicstrategy@gmail.com.', 'error');
