@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clutch is a decision-to-execution platform for public-private projects, combining deal structuring, incentive stack modeling, and policy execution.">
+  <title>Clutch | Decision-to-Execution Platform</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">Clutch</div>
+      <nav>
+        <a href="#wedge">Wedge</a>
+        <a href="#platform">Platform</a>
+        <a href="#mvp">MVP</a>
+        <a href="#workspace">Workspace</a>
+        <a href="#legal">Legal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Public-Private Project Delivery</p>
+        <h1>From decision to execution in one workflow.</h1>
+        <p class="lead">Clutch unifies AI deal architecture, incentive stack simulation, policy timeline coordination, and accountable execution planning for complex projects.</p>
+      </div>
+    </section>
+
+    <section id="wedge" class="section">
+      <div class="container">
+        <h2>Clutch's Core Wedge</h2>
+        <p class="section-lead">Most alternatives are point solutions. Clutch links deal design and execution in one platform.</p>
+        <div class="grid two-col">
+          <article class="card">
+            <h3>Point-Solution Market Today</h3>
+            <ul>
+              <li>Site selection/data rooms (ZoomProspector, LocationOne, GIS WebTech, Sitehunt)</li>
+              <li>Incentive/compliance tracking (EDOiQ)</li>
+              <li>Policy intelligence/government affairs (FiscalNote, Quorum, POLITICO Pro, LegiStorm, Statt)</li>
+            </ul>
+          </article>
+          <article class="card accent">
+            <h3>Clutch Opportunity</h3>
+            <p>Very few products connect <strong>deal structuring + incentive stack modeling + policy/regulatory execution</strong> in one operating workflow.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="platform" class="section muted">
+      <div class="container">
+        <h2>Decision-to-Execution Platform</h2>
+        <div class="grid four-col">
+          <article class="card"><h3>AI Deal Architect</h3><p>Builds public-private deal structures based on constraints and stakeholder dynamics.</p></article>
+          <article class="card"><h3>Incentive Stack Simulator</h3><p>Compares capital paths, scenarios, and risk tradeoffs before commitments are made.</p></article>
+          <article class="card"><h3>Policy Timeline Coordination</h3><p>Aligns milestones with policy hearings, agency deadlines, and stakeholder approvals.</p></article>
+          <article class="card"><h3>Execution Accountability</h3><p>Generates checklists, owners, and target dates so decisions become shipped work.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="mvp" class="section">
+      <div class="container">
+        <h2>MVP Focused on Uniqueness</h2>
+        <div class="grid two-col">
+          <article class="card"><h3>1) Intake Workspace</h3><p>Capture project constraints, financing assumptions, and stakeholder map.</p></article>
+          <article class="card"><h3>2) Scenario Engine</h3><p>Model financing and incentive pathways with confidence/risk tradeoffs.</p></article>
+          <article class="card"><h3>3) Policy Impact Feed</h3><p>Tie policy updates directly to project milestones and sequencing.</p></article>
+          <article class="card"><h3>4) Decision Memo Export</h3><p>Generate a decision memo plus implementation plan for leadership teams.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="workspace" class="section muted">
+      <div class="container">
+        <h2>Clutch MVP Workspace</h2>
+
+        <div class="workspace-grid">
+          <article class="card">
+            <h3>Intake Workspace</h3>
+            <form id="intake-form">
+              <label>Project name <input type="text" id="project-name" placeholder="Riverfront Mobility Hub" required></label>
+              <label>Budget ($M) <input type="number" id="budget" min="1" value="120" required></label>
+              <label>Risk tolerance
+                <select id="risk-tolerance">
+                  <option value="low">Low</option>
+                  <option value="balanced" selected>Balanced</option>
+                  <option value="high">High</option>
+                </select>
+              </label>
+              <label>Primary stakeholders <textarea id="stakeholders" rows="4" placeholder="City council, transit authority, state agency, private sponsor" required></textarea></label>
+              <button type="submit">Run Scenario Engine</button>
+            </form>
+          </article>
+
+          <article class="card" id="scenario-output">
+            <h3>Incentive Stack Simulator</h3>
+            <p class="hint">Submit intake inputs to generate ranked pathways.</p>
+            <div id="scenario-results"></div>
+          </article>
+
+          <article class="card">
+            <h3>Policy Impact Feed</h3>
+            <label>Project start date <input type="date" id="start-date"></label>
+            <button id="build-policy-feed" type="button">Build Policy Timeline</button>
+            <ul id="policy-feed" class="timeline"></ul>
+          </article>
+
+          <article class="card">
+            <h3>Execution Checklist</h3>
+            <ul id="execution-checklist" class="checklist">
+              <li><input type="checkbox"> Define preferred scenario and fallback route</li>
+              <li><input type="checkbox"> Assign owner for each incentive application</li>
+              <li><input type="checkbox"> Confirm policy milestones with legal/government affairs</li>
+              <li><input type="checkbox"> Lock implementation plan and reporting cadence</li>
+            </ul>
+            <button id="export-memo" type="button">Export Decision Memo</button>
+            <p id="export-status" class="hint"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="legal" class="site-footer">
+    <div class="container">
+      <p>© 2026 Clutch. Decision-to-execution platform for public-private projects.</p>
+      <div class="legal-links">
+        <a href="legal/terms-of-service.html">Terms of Service</a>
+        <a href="legal/privacy-policy.html">Privacy Policy</a>
+        <a href="legal/cookie-notice.html">Cookie Notice</a>
+        <a href="legal/acceptable-use-policy.html">Acceptable Use Policy</a>
+        <a href="legal/data-processing-addendum.html">Data Processing Addendum</a>
+        <a href="legal/ai-use-notice.html">AI Use & Transparency Notice</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
